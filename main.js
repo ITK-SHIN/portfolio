@@ -12,7 +12,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-//Make navbar fontsizing =>
+// scroll => Make navbar fontsizing
 window.addEventListener("scroll", () => {
   if (window.scrollY > navbarHeight) {
     navbar.style.fontSize = "15px";
