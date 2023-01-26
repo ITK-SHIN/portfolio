@@ -543,8 +543,9 @@ p {
 
   .category__btn {
     margin: 4px 0;
-    width: 100%;
+    width: 70%;
   }
+
   .project {
     flex-grow: 1;
   }

@@ -12,6 +12,15 @@ window.addEventListener("scroll", function () {
   }
 });
 
+//Make navbar fontsizing =>
+window.addEventListener("scroll", () => {
+  if (window.scrollY > navbarHeight) {
+    navbar.style.fontSize = "15px";
+  } else {
+    navbar.style.fontSize = "18px";
+  }
+});
+
 //Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector(".navbar__menu");
 navbarMenu.addEventListener("click", (event) => {
