@@ -27,9 +27,9 @@
 
     <ul class="navbar__menu">
       <li class="navbar__menu__item active" data-link="#home">Home</li>
-      <li class="navbar__menu__item" data-link="#about">About</li>
-      <li class="navbar__menu__item" data-link="#skills">Skills</li>
       <li class="navbar__menu__item" data-link="#work">My work</li>
+      <li class="navbar__menu__item" data-link="#skills">Skills</li>
+      <li class="navbar__menu__item" data-link="#about">About</li>
       <li class="navbar__menu__item" data-link="#contact">Contact</li>
     </ul>
 
@@ -40,15 +40,12 @@
   </nav>
 
   <!-- Home -->
-
-
   <section id="home">
     <div class="home__container">
       <img src="imgs/상우ver.2.4_bg_remove.png" alt="SangWoo's profile photo" class="home__avatar" />
-      <h1 class="home__title">Hello, <br />I'm SangWoo</h1>
       <h2 class="home__description">
-        최고를 꿈꾸는 프론트앤드 개발자<br>
-
+        최고를 꿈꾸는 준비된 프론트앤드 개발자<br>
+        Shin Sangwoo 입니다
       </h2>
       <button class="home__contact" data-link="#contact">Contact Me</button>
     </div>
@@ -62,67 +59,100 @@
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section section__container">
-    <h1>About me</h1>
-    <div class="about__self">
-      <span class="about__self-major">
-        "다양한 기술에 흥미를 가진 신입 개발자로, 배려하는 커뮤니케이션 스킬과 협업 능력을 바탕으로 더 나은 나를 추구합니다."
-      </span>
-
-      <div class="about__self-sub-box">
-        <p class="about__self-subtext">
-          <br>
-          JavaScript의 동작원리를 이해하고, 프론트앤드 개발자의 기본기를 중요하게 생각합니다. <br>신입 개발자로서 빠르게 적응하고 새로운 기술을 습득하는데 자신이 있습니다.
-          <br>
-          항상 스스로를 의심하며, 문제를 해결하는 것을 좋아합니다.
-        </p>
-      </div>
-    </div>
-
-    <div class="about__majors">
-      <div class="major">
-        <div class="major__icon">
-          <i class="fa-brands fa-html5"></i>
-        </div>
-        <h2 class="major__title">HTML & CSS</h2>
-        <div class="major__description">기본기 숙달</div>
+  <!-- work -->
+  <section id="work" class="section">
+    <div class="section__container">
+      <h1>My work</h1>
+      <h3>클릭시 github로 이동합니다</h3>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">
+          All<span class="category__count">6</span>
+        </button>
+        <button class="category__btn" data-filter="javascript">
+          JavaScript<span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="react">
+          React<span class="category__count">1</span>
+        </button>
+        <button class="category__btn" data-filter="team">
+          Team<span class="category__count">1</span>
+        </button>
+        <button class="category__btn" data-filter="etc">
+          ETC<span class="category__count">1</span>
+        </button>
       </div>
 
-      <div class="major">
-        <div class="major__icon">
-          <i class="fa-brands fa-js"></i>
-        </div>
-        <h2 class="major__title">JavaScript</h2>
-        <div class="major__description">Javascript 동작에 대한 이해</div>
-      </div>
 
-      <div class="major">
-        <div class="major__icon">
-          <i class="fa-brands fa-react"></i>
-        </div>
-        <h2 class="major__title">React</h2>
-        <div class="major__description">공식문서를 통한 학습</div>
-      </div>
-    </div>
+      <div class="work__projects">
+        <!-- js 프로젝트 -->
+        <a href="https://github.com/ITK-SHIN/js_star-rating" class="project" target="blank" data-type="javascript">
+          <img src="https://github.com/ITK-SHIN/js_star-rating/assets/105304446/499e1cfd-1b22-42b1-8d3e-1fd49f62ac8a"
+            alt="star-rating gif" class="project__img" />
+          <div class="project__description">
+            <h3>star-rating (Vanilla JS) </h3>
+            <span>재사용 가능한 별점 </span>
+            <span>JavaScript </span>
+            <span>2023.6.01~23.6.02 </span>
+          </div>
+        </a>
 
-    <div class="about__jobs">
-      <div class="job">
-        <img src="imgs/학교logo.jpg" alt="교체필요" class="job__logo" width="100px" height="100px" />
-        <div class="job__description">
-          <p class="job__name">강원대학교 농업생명과학대학 에코환경학과</p>
-          <p class="job__period">2016.3 ~2021.1</p>
-          <div class="job"></div>
-        </div>
-      </div>
+        <a href="https://github.com/ITK-SHIN/js_analog-clock" class="project" target="blank" data-type="javascript">
+          <img src="https://github.com/ITK-SHIN/js_analog-clock/assets/105304446/0d98195e-27d2-420a-b6c1-65f522db51d2"
+            alt="analog clock gif" class="project__img" />
+          <div class="project__description">
+            <h3>Analog clock (Vanilla JS) </h3>
+            <span>재사용 가능한 아날로그시계 </span>
+            <span>JavaScript </span>
+            <span>2023.5.28~23.5.31 </span>
+          </div>
+        </a>
 
-      <div class="job">
-        <img src="imgs/sunglasscat.png" alt="교체필요" class="job__logo" width="100px" height="100px" />
-        <div class="job__description">
-          <p class="job__name">정보처리기사 필기합격</p>
-          <p class="job__period">2022년도 2회차</p>
-          <div class="job"></div>
-        </div>
+        <a href="https://itk-shin.github.io/my-first-chrom-web/" class="project" target="blank" data-type="javascript">
+          <img src="imgs/projects/todo.png" alt="todoList img" class="project__img" />
+          <div class="project__description">
+            <h3>처음만든 js todoList</h3>
+            <span>HTML + CSS + JS </span>
+            <span>2023.1.1~23.1.9 </span>
+
+          </div>
+        </a>
+
+
+        <!-- React 프로젝트 -->
+        <a href="https://github.com/ITK-SHIN/my-react-shop-2024" class="project" target="blank" data-type="react">
+          <img src="imgs/projects/marbleshop.png" alt="" class="project__img" />
+          <div class="project__description">
+            <h3>Marble Shop</h3>
+            <span>React + js + CSS Module</span>
+            <span>리액트 쇼핑몰</span>
+            <span>24.01 ~ 24.02 + update예정</span>
+
+          </div>
+        </a>
+
+        <!-- Team 프로젝트 -->
+        <a href="https://github.com/zerobase-I/GoTogether-FE" class="project" target="blank" data-type="team">
+          <img src="imgs/projects/example.png" alt="" class="project__img" />
+          <div class="project__description">
+            <h3>같이가요</h3>
+            <span>React + js + TailwindCSS</span>
+            <span>Back-end와의 팀 프로젝트</span>
+            <span>같이 여행가는 동행 서비스</span>
+            <span>24.02 ~ 24.04</span>
+          </div>
+        </a>
+
+
+        <!-- ETC -->
+        <a href="https://itk-shin.github.io/kokoa-clone-2022/" class="project" target="blank" data-type="etc">
+          <img src="imgs/projects/shortuse.png" alt="" class="project__img" />
+          <div class="project__description">
+            <h3>KoKoa Talk</h3>
+            <span>HTML + CSS</span>
+            <span>22.12.14 ~ 22.12.26</span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
@@ -237,94 +267,72 @@
     </div>
   </section>
 
-  <!-- work -->
-  <section id="work" class="section">
-    <div class="section__container">
-      <h1>My work</h1>
-      <h3>클릭시 github로 이동합니다</h3>
-      <div class="work__categories">
-        <button class="category__btn selected" data-filter="*">
-          All<span class="category__count">8</span>
-        </button>
-        <button class="category__btn" data-filter="javascript">
-          JavaScript<span class="category__count">4</span>
-        </button>
-        <button class="category__btn" data-filter="react">
-          React<span class="category__count">1</span>
-        </button>
-        <button class="category__btn" data-filter="team">
-          Team<span class="category__count">1</span>
-        </button>
-        <button class="category__btn" data-filter="etc">
-          ETC<span class="category__count">1</span>
-        </button>
+  <!-- About -->
+  <section id="about" class="section section__container">
+    <h1>About me</h1>
+    <div class="about__self">
+      <span class="about__self-major">
+        "문제를 여러 관점으로 바라보는 개발자로, 배려하는 커뮤니케이션 스킬과 협업 능력을 바탕으로 더 나은 해결책을 추구합니다."
+      </span>
+
+      <div class="about__self-sub-box">
+        <p class="about__self-subtext">
+          <br>
+          1. 개발자로서 빠르게 적응하고 새로운 기술을 습득하는데 자신이 있습니다.
+          <br>
+          2. JavaScript의 동작원리를 이해하고, 프론트앤드 개발자의 기본기를 중요하게 생각합니다.
+          <br>
+          3. GPT와 같은 최신 AI 기술을 적극적으로 활용하는 등, 새로운 기술 습득에 대한 높은 적응력과 도전 정신을 지녔습니다.
+        </p>
+      </div>
+    </div>
+
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-brands fa-html5"></i>
+        </div>
+        <h2 class="major__title">HTML & CSS</h2>
+        <div class="major__description">기본기 숙달</div>
       </div>
 
-      <div class="work__projects">
-        <!-- javascript 프로젝트 -->
-        <!--         <a href="https://github.com/ITK-SHIN/portfolio" class="project" target="blank" data-type="javascript">
-          <img src="imgs/projects/shortuse.png" alt="" class="project__img" />
-          <div class="project__description">
-            <h3>short use2</h3>
-            <span>example2</span>
-          </div>
-        </a> -->
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-brands fa-js"></i>
+        </div>
+        <h2 class="major__title">JavaScript</h2>
+        <div class="major__description">Javascript 동작에 대한 이해</div>
+      </div>
 
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-brands fa-react"></i>
+        </div>
+        <h2 class="major__title">React</h2>
+        <div class="major__description">공식문서 & 프로젝트를 통한 학습</div>
+      </div>
+    </div>
 
-        <!-- React 프로젝트 -->
-        <!--         <a href="https://github.com/ITK-SHIN/portfolio" class="project" target="blank" data-type="react">
-          <img src="imgs/projects/shortuse.png" alt="" class="project__img" />
-          <div class="project__description">
-            <h3>short use4</h3>
-            <span>example4</span>
-          </div>
-        </a> -->
+    <div class="about__jobs">
+      <div class="job">
+        <img src="imgs/학교logo.jpg" alt="교체필요" class="job__logo" width="100px" height="100px" />
+        <div class="job__description">
+          <p class="job__name">강원대학교 농업생명과학대학 에코환경학과</p>
+          <p class="job__period">2016.3 ~2021.1</p>
+          <div class="job"></div>
+        </div>
+      </div>
 
-        <a href="https://github.com/ITK-SHIN/portfolio" class="project" target="blank" data-type="react">
-          <img src="imgs/projects/shortuse.png" alt="" class="project__img" />
-          <div class="project__description">
-            <h3>Marble Shop</h3>
-            <span>React + js + CSS Module</span>
-            <span>리액트 쇼핑몰</span>
-          </div>
-        </a>
-
-        <!-- Team 프로젝트 -->
-        <a href="https://github.com/zerobase-I/GoTogether-FE" class="project" target="blank" data-type="team">
-          <img src="imgs/projects/example.png" alt="" class="project__img" />
-          <div class="project__description">
-            <h3>같이가요</h3>
-            <span>React + js + TailwindCSS</span>
-            <span>Back-end와의 팀 프로젝트</span>
-            <span>같이 여행가는 동행 서비스</span>
-          </div>
-        </a>
-
-
-        <!-- ETC -->
-        <a href="https://itk-shin.github.io/my-first-chrom-web/" class="project" target="blank" data-type="etc">
-          <img src="imgs/projects/shortuse.png" alt="" class="project__img" />
-          <div class="project__description">
-            <h3>my first chrom web</h3>
-            <span>HTML + CSS + JS </span>
-            <span>2023.1.1~23.1.9 </span>
-
-          </div>
-        </a>
-
-        <a href="https://itk-shin.github.io/kokoa-clone-2022/" class="project" target="blank" data-type="etc">
-          <img src="imgs/projects/shortuse.png" alt="" class="project__img" />
-          <div class="project__description">
-            <h3>KoKoa Talk</h3>
-            <span>HTML + CSS</span>
-            <span>22.12.14 ~ 22.12.26</span>
-          </div>
-        </a>
-
+      <div class="job">
+        <img src="imgs/sunglasscat.png" alt="교체필요" class="job__logo" width="100px" height="100px" />
+        <div class="job__description">
+          <p class="job__name">정보처리기사 필기합격</p>
+          <p class="job__period">2022년도 2회차</p>
+          <div class="job"></div>
+        </div>
       </div>
     </div>
   </section>
-
 
 
   <!-- contact -->
@@ -341,7 +349,7 @@
 
     </div>
     <p class="contact__right">
-      2023 Sangwoo's portfolio - All rights reserved
+      2024 Sangwoo's portfolio - All rights reserved
     </p>
   </section>
 

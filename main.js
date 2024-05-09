@@ -108,14 +108,7 @@ function scrollIntoView(selector) {
 // 3. 보여지는 섹션에 해당되는 메뉴 아이템을 활성화 시킨다.
 
 //1번
-const sectionIds = [
-  "#home",
-  "#about",
-  "#skills",
-  "#work",
-  "#testimonials",
-  "#contact",
-];
+const sectionIds = ["#home", "#about", "#skills", "#work", "#contact"];
 
 const sections = sectionIds.map((id) => document.querySelector(id));
 const navItems = sectionIds.map((id) =>
