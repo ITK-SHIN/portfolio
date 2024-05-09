@@ -34,6 +34,11 @@
   height: 250px;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
+  transition: all 1s;
+}
+
+.home__avatar:hover {
+  transform: scale(1.2);
 }
 
 .home__title,
